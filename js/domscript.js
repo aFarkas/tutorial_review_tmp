@@ -2,6 +2,7 @@ jQuery(function($){
 	
 	$.createInteractiveProductVideo = function (mediaElement, domObject) {
 		var mytablets;
+		var lastProduct;
 		var path = $(domObject).attr('data-productsjson');
 		var productInfo = $( $(domObject).attr('data-for') );
 		
@@ -15,7 +16,7 @@ jQuery(function($){
 			});
 			
 			mediaElement.addEventListener('timeupdate', function(e) {
-			
+				 
 				var showproduct = "";
 				
 				if(mytablets){
@@ -26,13 +27,21 @@ jQuery(function($){
 						}
 					});
 					
-					if (showproduct && !productInfo.hasClass(showproduct.id)) {
-						productInfo.removeClass().addClass(showproduct.id).show();
-						$('dd.product-name', productInfo).text(showproduct.name + " " + showproduct.version);
-						// 'daten/img/' ist im vom "CMS" produzierten JSON besser aufgehoben ein Prototyp kennt nie die Pfade
-						$('dd.product-image', productInfo).attr('src', 'daten/img/'+showproduct.image);
-						$('dd.product-url a', productInfo).attr('href', showproduct.url);
-						$('dd.product-price', productInfo).text(showproduct.price);
+					if (showproduct) {
+						if(lastProduct !== showproduct){
+							if(!lastProduct){
+								productInfo.stop(true, true).fadeIn();
+							}
+							lastProduct = showproduct;
+							$('dd.product-name', productInfo).text(showproduct.name + " " + showproduct.version);
+							// 'daten/img/' ist im vom "CMS" produzierten JSON besser aufgehoben ein Prototyp kennt nie die Pfade
+							$('dd.product-image', productInfo).attr('src', 'daten/img/'+showproduct.image);
+							$('dd.product-url a', productInfo).attr('href', showproduct.url);
+							$('dd.product-price', productInfo).text(showproduct.price);
+						}
+					} else if(lastProduct){
+						productInfo.stop(true, true).fadeOut();
+						lastProduct = false;
 					}
 					
 				}

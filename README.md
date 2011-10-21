@@ -75,4 +75,9 @@ II. 3. fals-y/truth-y Werte entweder strikt oder verkürzt prüfen (type coercio
 
 Eine Prüfung wie beispielsweise (bla == false) oder (foo != 0) oder (bar == "") hat in JS keinen anderen Sinn wie (!bla) oder (foo) oder (!bar), gleichzeitig kann dies zu Verwirrung führen, ob der Entwickler eine strikte Prüfung wollte (bla === false).
 
+II. 2. Vermeidung von removeClass ohne Parameter
+------------------
+
+Das Entfernen aller Klassen ist nicht sher schön, da hierdurch eventuelle Hooks für das CSS verloren gehen. Durch unsere zusätzliche Variable lastProduct schlagen wir zwei fliegen mit einer Klappe: 1. wir entfernen keine Klassen mehr und 2. benötigen wir für unseren Test keinen aufwendigen DOM-Zugriff. Gleichzeitig können wir für das Anzeigen eine Animation einbauen und wir beheben den Fehler, dass es nicht passende Produktinfos gibt, wenn der User nach vorne springt oder sich das Vidoe von vorne anschaut.
+
  
