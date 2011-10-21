@@ -26,7 +26,7 @@ jQuery(function($){
 						}
 					});
 					
-					if (showproduct != "" && productInfo.hasClass(showproduct.id) == false) {
+					if (showproduct && !productInfo.hasClass(showproduct.id)) {
 						productInfo.removeClass().addClass(showproduct.id).show();
 						$('dd.product-name', productInfo).text(showproduct.name + " " + showproduct.version);
 						// 'daten/img/' ist im vom "CMS" produzierten JSON besser aufgehoben ein Prototyp kennt nie die Pfade
