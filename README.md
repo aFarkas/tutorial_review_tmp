@@ -35,7 +35,7 @@ Es ist nicht bekannt, ob die Response des AJAX-Requests bereits zum Zeitpunkt de
 I. 3. [#area-productinfo mit CSS "verstecken"](https://github.com/aFarkas/tutorial_review_tmp/commit/4d00b034f30cdf3ce85db2fec161bacad0251f06)
 ------------------
 
-#area-productinfo hat bei ausgeschaltetem JS keinen Sinn und soll anfangs ausgeblendet sein. Soetwas macht man dann mit CSS.
+area-productinfo hat bei ausgeschaltetem JS keinen Sinn und soll anfangs ausgeblendet sein. Soetwas macht man dann mit CSS.
 
 
 I. 4. [kapseln von zusammenhängenden Code](https://github.com/aFarkas/tutorial_review_tmp/commit/b7f45f6e9caeae772a55cf730576dfbe44bb15eb)
