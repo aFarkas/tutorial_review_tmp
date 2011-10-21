@@ -1,0 +1,390 @@
+* {
+margin: 0;
+padding: 0;
+font-size: 100%;
+}
+
+body {
+font: normal 15px/24px georgia, "Times New Roman", serif;
+color: #653d1d;
+}
+
+.wrapper {
+width: 880px;
+margin: 0 auto;
+}
+
+#left-col {
+width: 280px;
+float: left;
+clear: both;
+margin: 70px 0 0 0;
+}
+
+#right-col {
+width: 890px;
+margin: 70px 0 0 0;
+}
+
+#footer {
+clear: both;
+}
+
+#main {
+padding-top: 10px;
+}
+
+/* ------------------------------------- Header-Bereich */
+
+
+h1 {
+float: left;
+}
+
+.headerimage {
+float: right;
+}
+
+/* ------------------------------------- Hauptnavigation */
+
+#navi {
+clear: both;
+margin-left: 290px;
+}
+
+#navi a:link,
+#navi a:visited {
+color: #653d1d;
+text-decoration: none;
+}
+
+#navi a:focus,
+#navi a:hover,
+#navi a:active {
+color: #a3c30f;
+}
+
+#navi li.active a:link,
+#navi li.active a:visited {
+color: #fff;
+}
+
+#navi li {
+list-style: none;
+float: left;
+margin-right: 25px;
+position: relative;
+padding: 9px 10px 6px 10px;
+}
+
+#nav-1 { top: 9px; }
+#nav-3 { top: -5px; }
+#nav-4 { top: -8px; }
+#nav-5 { top: -4px; }
+
+#navi li.active {
+background-color: #a3c30f;
+-moz-border-radius: 6px;
+-webkit-border-radius: 6px;
+}
+
+
+
+/* ------------------------------------- Subnavigation */
+
+
+#left-col ul a:link,
+#left-col ul a:visited {
+color: #653d1d;
+text-decoration: none;
+}
+
+#left-col ul a:focus,
+#left-col ul a:hover,
+#left-col ul a:active {
+color: #a3c30f;
+}
+
+#left-col ul .active a:link,
+#left-col ul .active a:visited {
+color: #a3c30f;
+}
+
+#left-col li {
+list-style: none;
+margin-bottom: 10px;
+float: left;
+clear: both;
+}
+
+#left-col ul {
+overflow: hidden;
+margin-bottom: 60px;
+}
+
+#left-col li.active {
+background: url(arrow.png) right 7px no-repeat;
+padding-right: 13px;
+}
+
+#contactbox {
+clear: both;
+}
+
+
+/* ------------------------------------- Inhaltsbereich */
+
+#right-col h2 {
+color: #bacd0d;
+font-size: 32px;
+font-weight: normal;
+margin-bottom: 20px;
+}
+
+#right-col p + h2 {
+	margin-top: 1em;
+}
+
+hr {
+border: none;
+height: 22px;
+background: url(divisor.png) 50% 0 no-repeat;
+margin: 30px 0;
+}
+
+#right-col img.last-child {
+margin-right: 0;
+}
+
+.gallery {
+overflow: hidden;
+}
+
+.gallery li {
+list-style: none;
+float: left;
+height: 180px;
+width: 140px;
+text-align: center;
+}
+
+/*
+.gallery li {
+display: inline-block;
+width: 140px;
+text-align: center;
+vertical-align: middle;
+}
+*/
+
+
+
+/* ------------------------------------- Kontaktbox */
+
+#contactbox {
+background-color: #a3c30f;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+width: 209px;
+padding: 8px 15px;
+color: #fff;
+font-size: 13px;
+position: relative;
+}
+
+#contactbox:hover {
+background-color: #b4cf37;
+}
+
+#contactbox a:link,
+#contactbox a:visited {
+color: #fff;
+}
+
+#contactbox h2 {
+font-weight: normal;
+font-size: 21px;
+}
+
+#contactbox .address {
+margin-top: 8px;
+line-height: 19px;
+}
+
+#contactbox .i,
+#contactbox .ii,
+#contactbox .iii,
+#contactbox .iiii {
+width: 13px;
+height: 13px;
+position: absolute;
+background: url(border-total.png) 0 0 no-repeat;
+}
+
+#contactbox .i {
+top: 0;
+left: 0;
+}
+
+#contactbox .ii {
+top: 0;
+right: 0;
+background-position: -13px 0;
+}
+
+#contactbox .iii {
+bottom: 0;
+right: 0;
+background-position: -13px -13px;
+}
+
+#contactbox .iiii {
+bottom: 0;
+left: 0;
+background-position: 0 -13px;
+}
+
+/* ------------------------------------- Footer */
+
+#footer {
+padding: 50px 0;
+}
+
+#footer p {
+text-align: right;
+}
+
+
+/* ------------------------------------- TOC */
+
+.toc {
+float: right;
+border: 1px solid #aaa;
+padding: 9px 15px;
+width: 200px;
+margin: 0 0 20px 20px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.toc a {
+	color: #BACD0D;
+}
+
+.toc a:focus,
+.toc a:hover,
+.toc a:active {
+	color: #444;
+}
+
+.toc li {
+	list-style: none;
+}
+
+
+/* ------------------------------------- Slideshow */
+
+ul.slideshow {
+	border: 1px solid #999;
+	margin: 1.5em 0;
+	height: 330px;
+	overflow: hidden;
+	position: relative;
+}
+
+ul.slideshow li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slideshowcontainer {
+	position: relative;
+	background: #ddd;
+}
+
+.slideshowcontainer a {
+	position: absolute;
+	right: 17px;
+	bottom: 10px;
+}
+
+.slideshowcontainer #backbutton {
+	right: 65px;
+}
+
+
+
+
+/* ------------------------------------- Welle */
+
+#header,
+#main {
+overflow: hidden;
+}
+
+hr.wave {
+clear: both;
+background: url(wave.png) center 0 no-repeat;
+height: 59px;
+margin-top: -35px;
+margin-bottom: -48px;
+position: relative;
+}
+
+hr.wave-footer {
+margin-top: 30px;
+margin-bottom: -78px;
+}
+
+#footer a:link,
+#footer a:visited {
+color: #653d1d;
+margin-left: 20px;
+}
+
+
+/* ------------------------------------- Anmeldung */
+
+form {
+	padding: 10px 20px;
+	border: 1px solid #bbb;
+	background: #ddd;
+}
+
+.error {
+	color: red;
+}
+
+/* ------------------------------------- Produktvideos */
+
+#area-video {
+	background: #ddd;
+	float: left;
+	width: 320px;
+	padding: 20px;
+}
+
+#area-productinfo {
+	float: right;
+	background: #ddd;
+	width: 470px;
+	padding: 20px;
+}
+
+#product-image {
+	float: right;
+}
+
+dl dt {
+	clear: left;
+	float: left;
+	width: 60px;
+}
+
+dl dd {
+	float: left;
+	width: 200px;
+}
+

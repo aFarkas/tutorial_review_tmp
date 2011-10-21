@@ -1,0 +1,32 @@
+body {
+font: normal 10pt/15pt georgia, "Times New Roman", serif;
+}
+
+
+#navi,
+#left-col ul,
+.headerimage,
+.wave {
+display: none;
+}
+
+h1 {
+float: left;
+}
+
+h1 img {
+width: 50mm;
+}
+
+#contactbox {
+border: 0.5mm #000 solid;
+float: right;
+width: 60mm;
+padding: 5mm;
+font-size: 8pt;
+line-height: 11pt;
+}
+
+#right-col {
+clear: both;
+}

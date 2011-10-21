@@ -1,0 +1,42 @@
+{
+    "products":{
+        "tablet":[
+            {
+            	"id":"product1",
+            	"timecode":"5.0",
+                "manufacturer":"Apple",
+                "name":"iPad",
+                "version":1,
+                "memory":"64 GB",
+                "price":"519,99 €",
+                "url":"http://www.amazon.de/dp/B0035WT8QM",
+                "image":"ipad1.png"
+            },
+            {
+            	"id":"product2",
+	            "timecode":"15.0",
+                "manufacturer":"Apple",
+                "name":"iPad",
+                "version":2,
+                "memory":"64 GB",
+                "price":"789,00 €",
+                "url":"http://www.amazon.de/dp/B004TKXTQY",
+                "image":"ipad2.png"
+            },
+            {
+            	"id":"product3",
+            	"timecode":"23.5",
+                "manufacturer":"HP",
+                "name":"Touchpad",
+                "version":1,
+                "memory":"32 GB",
+                "price":"553,99 €",
+                "url":"http://www.amazon.de/dp/B0057MY692",
+                "image":"touchpad.png"
+            }
+        ]
+        
+    }
+}
+
+
