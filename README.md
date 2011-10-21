@@ -32,7 +32,7 @@ I. 2. [AJAX ist asynchron](https://github.com/aFarkas/tutorial_review_tmp/commit
 Es ist nicht bekannt, ob die Response des AJAX-Requests bereits zum Zeitpunkt des ersten timeupdate-Events erfolgreich war. Hier hätte es meherere Möglichkeiten zur Lösung gegebn, andere Techniken sind in anderen Standardsituationen eher angesagt. Die einfach if-Abfrage dürfte ausreichen. Wenn man es ernst nimmt, macht man noch einen check ob es sich um ein Array handelt.
 
 
-I. 3. [#area-productinfo mit CSS "verstecken"](https://github.com/aFarkas/tutorial_review_tmp/commit/4d00b034f30cdf3ce85db2fec161bacad0251f06)
+I. 3. [area-productinfo mit CSS "verstecken"](https://github.com/aFarkas/tutorial_review_tmp/commit/4d00b034f30cdf3ce85db2fec161bacad0251f06)
 ------------------
 
 area-productinfo hat bei ausgeschaltetem JS keinen Sinn und soll anfangs ausgeblendet sein. Soetwas macht man dann mit CSS.
