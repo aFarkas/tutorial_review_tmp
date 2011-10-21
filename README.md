@@ -52,4 +52,14 @@ I. 5. mytablets $.each
 ------------------
 
 mytablets ist ein Array von Strings und Zahlen und kein DOM-Object, keine DOM-Liste, kein Selektor und auch kein Array von DOM-Objekten. Der Aufruf $(Array) erstellt ein jQuery-Object mit den jQuery methoden, bind, addClass, animate etc.. Es sollte klar sein, dass diese Methoden nichts mit String und ähnlichem Anfangen können. Für Arrays gibt es die einfache Methode $.each statt $().each.
+
+II. wichtige Änderungen
+================================
+
+II. 1. Trennung von interaktivem Script und Videoeinbindung und noConflict-Fähigkeit
+------------------
+
+Unabhängig von einer Kapselung sollte man verschiedene Aufgaben auftrennen.
+
+In sehr vielen Content Management Systemen kann es zu erhablichen Problemen kommen, wenn sich darauf verläßt, dass $ identisch zu jQuery ist. 
  
