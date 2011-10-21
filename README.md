@@ -69,4 +69,10 @@ II. 2. einfache konfigurierbare HTML-Componente
 Hier werden nun die Konfigurationen herausgezogen. Das data-productsjson ist eine Pfadangabe die grundsätzlich im Markup sehr gut aufgebhoben ist, da das Backend die genauen Pfade kennt. Das data-for funnktioniert ähnlich wie das label[for]. Allerdings ist es eine Behelfskonstruktion. In der Regel würde ich gemeinsame zusammenhängende Componenten mit einem Container wrappen und über diesen Kontext gehen. Aber hierdurch vermeide ich nun eine Umstrukturierung.
 
 Was haben wir hiermit geschafft. Wir haben eine Wiederverwendbare Komponente bekommen. Durch unsere Kapselung und Markup-Konfiguration können mehrere interaktive Videos auf einer Seite eingesetzt werden. Durch unsere vorangegangene Trennung, können normale Video und interaktive Produktvideos gemischt werden.
+
+II. 3. fals-y/truth-y Werte entweder strikt oder verkürzt prüfen (type coercion)
+------------------
+
+Eine Prüfung wie beispielsweise (bla == false) oder (foo != 0) oder (bar == "") hat in JS keinen anderen Sinn wie (!bla) oder (foo) oder (!bar), gleichzeitig kann dies zu Verwirrung führen, ob der Entwickler eine strikte Prüfung wollte (bla === false).
+
  
