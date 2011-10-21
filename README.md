@@ -27,3 +27,9 @@ AJAX ist asynchron
 ------------------
 
 Es ist nicht bekannt, ob die Response des AJAX-Requests bereits zum Zeitpunkt des ersten timeupdate-Events erfolgreich war. Hier hätte es meherere Möglichkeiten zur Lösung gegebn, andere Techniken sind in anderen Standardsituationen eher angesagt. Die einfach if-Abfrage dürfte ausreichen. Wenn man es ernst nimmt, macht man noch einen check ob es sich um ein Array handelt.
+
+
+#area-productinfo mit CSS "verstecken"
+------------------
+
+#area-productinfo hat bei ausgeschaltetem JS keinen Sinn und soll anfangs ausgeblendet sein. Soetwas macht man dann mit CSS.

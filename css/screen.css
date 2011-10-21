@@ -367,6 +367,7 @@ form {
 }
 
 #area-productinfo {
+	display: none;
 	float: right;
 	background: #ddd;
 	width: 470px;
