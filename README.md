@@ -33,3 +33,13 @@ Es ist nicht bekannt, ob die Response des AJAX-Requests bereits zum Zeitpunkt de
 ------------------
 
 #area-productinfo hat bei ausgeschaltetem JS keinen Sinn und soll anfangs ausgeblendet sein. Soetwas macht man dann mit CSS.
+
+
+1. kapseln von zusammenhängenden Code
+------------------
+
+Man sollte Spaghetti-Code vermeiden und zusammenhängenden Code entpsrechend kapseln. Hierfür gibt es sehr viele verschiedene Möglichkeiten, welche nicht alle in einem Einsteigertutorial erklärt werden können. Der Entwickler sollte eine Technik erläutern und dann auf diese konsequent aufbauen. Bei jQuery bietet sich als einfachste Möglichkeit die Kapselung in einer callback-Funktion an. Typisch hierfür:
+
+---------------
+	$('div.mein-modul').each( erstelleWasMagisches );
+---------------

@@ -1,8 +1,17 @@
 $(function(){
-	var mytablets;
+	
 	
 	$('video,audio').mediaelementplayer({
-		success: function (mediaElement, domObject) { 
+		success: function (mediaElement, domObject) {
+			var mytablets;
+			$.ajax({
+				url:'daten/products.json',
+				dataType:'json',
+				success: function(jsondaten){
+					mytablets = jsondaten.products.tablet;
+				}
+			});
+			
 			mediaElement.addEventListener('timeupdate', function(e) {
 			
 				var showproduct = "";
@@ -25,14 +34,5 @@ $(function(){
 			}, false);
 		}
 	});
-	
-	$.ajax({
-		url:'daten/products.json',
-		dataType:'json',
-		success: function(jsondaten){
-			mytablets = jsondaten.products.tablet;
-		}
-	});
-	
 		
 });
