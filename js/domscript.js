@@ -16,7 +16,7 @@ $(function(){
 			
 				var showproduct = "";
 				if(mytablets){
-					$(mytablets).each(function(i){
+					$.each(mytablets, function(i){
 						if (this.timecode <= mediaElement.currentTime) {
 							showproduct = this;
 						}
