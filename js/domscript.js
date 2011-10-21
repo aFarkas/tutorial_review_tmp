@@ -8,19 +8,20 @@ $(function(){
 			mediaElement.addEventListener('timeupdate', function(e) {
 			
 				var showproduct = "";
-				
-				$(mytablets).each(function(i){
-					if (this.timecode <= mediaElement.currentTime) {
-						showproduct = this;
+				if(mytablets){
+					$(mytablets).each(function(i){
+						if (this.timecode <= mediaElement.currentTime) {
+							showproduct = this;
+						}
+					});
+					
+					if (showproduct != "" && $('#area-productinfo').hasClass(showproduct.id) == false) {
+						$('#area-productinfo').removeClass().addClass(showproduct.id).show();
+						$('#product-name').text(showproduct.name + " " + showproduct.version);
+						$('#product-image').attr('src', 'daten/img/'+showproduct.image);
+						$('#product-url a').attr('href', showproduct.url);
+						$('#product-price').text(showproduct.price);
 					}
-				});
-				
-				if (showproduct != "" && $('#area-productinfo').hasClass(showproduct.id) == false) {
-					$('#area-productinfo').removeClass().addClass(showproduct.id).show();
-					$('#product-name').text(showproduct.name + " " + showproduct.version);
-					$('#product-image').attr('src', 'daten/img/'+showproduct.image);
-					$('#product-url a').attr('href', showproduct.url);
-					$('#product-price').text(showproduct.price);
 				}
 			
 			}, false);
