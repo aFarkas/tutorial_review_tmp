@@ -1,12 +1,13 @@
 $(function(){
-
+	var mytablets;
+	
 	$('#area-productinfo').hide();
-
+	
 	$('video,audio').mediaelementplayer({
 		success: function (mediaElement, domObject) { 
 			mediaElement.addEventListener('timeupdate', function(e) {
 			
-				showproduct = "";
+				var showproduct = "";
 				
 				$(mytablets).each(function(i){
 					if (this.timecode <= mediaElement.currentTime) {
